@@ -6,10 +6,10 @@ max = 6
 computer_score = 0
 player_score = 0
 
-while True:
-    print("Can you beat the computer?")
-    print("Please type 'yes' to find out!")
+print("Can you beat the computer?")
+print("Please type 'yes' to find out!")
     
+while True:
     roll = str(input())
     roll = roll.lower()
 
@@ -39,7 +39,9 @@ while True:
             computer_score = computer_score+1
             print("Computer:", computer_score, "- Player:", player_score)
             print()
-else:
-    print("Hey! We couldn't quite get that!")
-
-    roll = input("Would you like to roll the dices again?")
+        print("Would you like to play again?")
+        
+    else:
+        print("Hey! We couldn't quite get that!")
+        print("Please type 'yes'")
+        print()
